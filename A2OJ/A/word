@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+public class Code{
+	public static void main(String[]args) {
+		Scanner scan = new Scanner(System.in);
+		String st = scan.next();
+		int up=0;
+		int lp=0;
+		char[] ch = st.toCharArray();
+		for(int i=0;i<st.length();i++) {
+		            if(ch[i]>=65&&ch[i]<=90) {
+		            	up++;
+		            }else {
+		            	lp++;
+		            }
+		}
+		if(up>lp) {
+			st = st.toUpperCase();
+		}else if(lp>up) {
+			st = st.toLowerCase();
+		}else {
+			st=st.toLowerCase();
+		}
+	
+	System.out.println(st);
+	}
+}
