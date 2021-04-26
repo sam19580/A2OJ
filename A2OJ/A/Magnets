@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+public class Code{
+	public static void main(String[]args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int n = Integer.valueOf(scan.next());
+		int c=0,b=0,a;
+		for(int i=0;i<n;i++) {
+			a = Integer.valueOf(scan.next());
+			if(a!=b) {
+				c++;
+			}
+			b=a;
+		}
+		System.out.println(c);
+	}
+}
