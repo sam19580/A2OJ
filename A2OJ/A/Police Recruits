@@ -1,0 +1,25 @@
+#pragma GCC optimize("Ofast")
+#include<bits/stdc++.h>
+ 
+using namespace std;
+ 
+ 
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    long long int n,ip,officer=0,crime=0;
+    cin>>n;
+    while(n--){
+        cin>>ip;
+        if(ip==-1&&officer==0){
+            crime++;
+        }else if(ip>0){
+        officer=officer+ip;
+        }else if(ip==-1&&officer>0){
+        officer--;}
+    }
+    cout<<crime;
+ 
+}
+ 
