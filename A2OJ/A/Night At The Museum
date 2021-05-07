@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+ 
+int main() {
+string s1;
+cin>>s1;
+int start=0,index=0,moves=0;
+for(int i=0;i<s1.length();i++){
+     index= s1.at(i)-97;
+    int walk=abs(start-index);
+    if(walk>13){
+        moves+=26-walk;
+    }else{
+    moves+=walk;
+    }
+    start=index;
+    
+}
+cout<<moves;
+    
+}
