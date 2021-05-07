@@ -1,0 +1,17 @@
+
+#pragma GCC optimize("Ofast")
+#include <bits/stdc++.h>
+using namespace std;
+ 
+ 
+int main() {
+long long int s,ch,sum=1;
+cin>>s>>ch;
+while(true){
+    if((s*sum)%10==0||(s*sum)%10==ch){
+       cout<<sum;
+       break;
+       }
+       sum++;
+}
+}
